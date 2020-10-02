@@ -40,9 +40,9 @@ def rgb1gray(f, method='NTSC'):
 		cv2.waitKey(0)
 
 
-
-rgb1gray('mandril_color.tif', 'average')
-rgb1gray('mandril_color.tif')
-rgb1gray('lena512color.tiff', 'average')
-rgb1gray('lena512color.tiff')
-sys.exit(0)
+if __name__ == '__main__':
+	rgb1gray('mandril_color.tif', 'average')
+	rgb1gray('mandril_color.tif')
+	rgb1gray('lena512color.tiff', 'average')
+	rgb1gray('lena512color.tiff')
+	sys.exit(0)

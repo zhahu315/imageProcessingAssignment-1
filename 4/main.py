@@ -1,7 +1,6 @@
 import math
 import numpy as np
 import sys
-import cv2 as cv
 from conv import Conv
 
 
@@ -30,5 +29,5 @@ def gaussKernel(sig, m=-1):
 
 
 if __name__ == '__main__':
-	gaussKernel(3, 19)
+	gaussKernel(5, 31)
 	sys.exit(0)
