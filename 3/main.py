@@ -97,6 +97,6 @@ if __name__ == '__main__':
 	a = [[-2, -4, -4, -4, -2], [-4, 0, 8, 0, -4], [-4, 8, 24, 8, -4], [-4, 0, 8, 0, -4], [-2, -4, -4, -4, -2]]
 	w = np.asarray(a)
 	print(w)
-	twodConv('mandril_color.tif', w, 'replicate')
+	twodConv('einstein.tif', w)
 	print(time.process_time())
 	sys.exit(0)
