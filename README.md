@@ -37,13 +37,11 @@
 
 5. 将所要读取的图像名以字符串传给f，将f用第2问的函数转为灰度图，返回处理后得到灰度图的名称给f，选定高斯滤波卷积核参数，传入`gaussKernel`函数，返回卷积核矩阵w，传入`twodConv`进行卷积处理。
 
-
-
 ## $\sigma = 1$与直接调用函数结果比较
 
 |                         代码计算结果                         |                直接调用opencv函数结果                |
 | :----------------------------------------------------------: | :--------------------------------------------------: |
-| ![replicate_NTSC_lena512color](5/replicate_NTSC_lena512color.tiff) | ![cv_NTSC_lena512color](5/cv_NTSC_lena512color.tiff) |
+|        ![NTSC_lena512color](5/NTSC_lena512color.tiff)        | ![cv_NTSC_lena512color](5/cv_NTSC_lena512color.tiff) |
 | ![replicate_NTSC_cameraman.tif](5/replicate_NTSC_cameraman.tif) |  ![cv_NTSC_cameraman.tif](5/cv_NTSC_cameraman.tif)   |
 
 

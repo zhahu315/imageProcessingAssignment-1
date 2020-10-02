@@ -1,8 +1,10 @@
 import math
 import numpy as np
 import sys
+from numba import jit
 
 
+@jit
 def gaussKernel(sig, m=-1):
 	min_m = math.ceil(3 * sig) * 2 + 1
 	if 0 < m < min_m:
