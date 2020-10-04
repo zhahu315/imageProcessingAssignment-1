@@ -60,7 +60,7 @@ def twodConv(f, w, method='zero'):
 			for j in range(column_img):
 				for x in range(row_w):
 					for y in range(column_w):
-						out_arr[i][j] += w[x][y] * padding_img[i+x][j+y]
+						out_arr[i][j] += round(w[x][y] * padding_img[i+x][j+y])
 		print('out_img=', out_arr)
 		print('process_time=', time.process_time())
 		cv2.imwrite(name, out_arr)
@@ -87,7 +87,7 @@ def twodConv(f, w, method='zero'):
 			for j in range(column_img):
 				for x in range(row_w):
 					for y in range(column_w):
-						out_arr[i][j] += w[x][y] * padding_img[i+x][j+y]
+						out_arr[i][j] += round(w[x][y] * padding_img[i+x][j+y])
 		print('out_arr=', out_arr)
 		print('process_time=', time.process_time())
 		cv2.imwrite(name, out_arr)

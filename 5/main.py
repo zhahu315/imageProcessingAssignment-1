@@ -6,9 +6,9 @@ import gausskernel
 
 
 if __name__ == '__main__':
-	f = 'mandril_color.tif'
+	f = 'lena512color.tiff'
 	f = rgb2gray.rgb1gray(f)
-	w = gausskernel.gaussKernel(8, 50)
+	w = gausskernel.gaussKernel(5, 31)
 	convolution.twodConv(f, w, 'replicate')
 	src = cv2.imread(f)
 	cv_gaussianBlur = cv2.GaussianBlur(src, (31, 31), 5, None, 5)
