@@ -6,7 +6,7 @@ import gausskernel
 
 
 if __name__ == '__main__':
-	f = 'lena512color.tiff'
+	f = 'mandril_color.tif'
 	f = rgb2gray.rgb1gray(f)
 	w = gausskernel.gaussKernel(5, 31)
 	convolution.twodConv(f, w, 'replicate')

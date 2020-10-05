@@ -23,7 +23,7 @@ def gaussKernel(sig, m=-1):
 		for i in range(m):
 			for j in range(m):
 				w[i][j] /= sum
-		print(w)
+		print(sum, w)
 	else:
 		sum = 0
 		for i in range(m):
@@ -35,7 +35,7 @@ def gaussKernel(sig, m=-1):
 		for i in range(m):
 			for j in range(m):
 				w[i][j] /= sum
-		print(w)
+		print(sum, w)
 	return w
 
 

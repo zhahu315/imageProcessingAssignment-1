@@ -24,7 +24,7 @@ def rgb1gray(f, method='NTSC'):
 		print(grayimg)
 		#cv2.namedWindow(name, cv2.WINDOW_FREERATIO)
 		cv2.imshow(name, cv2.imread(name))
-		cv2.waitKey(0)
+		cv2.waitKey(1000)
 	else:
 		rgbimg = cv2.imread(f)
 		h, w, _ = rgbimg.shape
@@ -39,7 +39,7 @@ def rgb1gray(f, method='NTSC'):
 		grayimg = cv2.imwrite(name, out)
 		#cv2.namedWindow(name, cv2.WINDOW_FREERATIO)
 		cv2.imshow(name, cv2.imread(name))
-		cv2.waitKey(0)
+		cv2.waitKey(1000)
 	return name
 
 if __name__ == '__main__':
