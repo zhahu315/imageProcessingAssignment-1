@@ -2,10 +2,10 @@ import cv2
 import numpy as np
 import sys
 import time
-from numba import jit
+# from numba import jit
 
 
-@jit
+# @jit
 def twodConv(f, w, method='zero'):
 	name = method + '_' + f
 	row_w, column_w = w.shape

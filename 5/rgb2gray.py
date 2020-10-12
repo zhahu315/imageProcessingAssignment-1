@@ -1,10 +1,10 @@
 import cv2
 import numpy as np
 import sys
-from numba import jit
+# from numba import jit
 
 
-@jit
+# @jit
 def rgb1gray(f, method='NTSC'):
 	name = method+'_'+f
 	a = cv2.imread(f, cv2.IMREAD_GRAYSCALE)

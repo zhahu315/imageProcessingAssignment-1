@@ -1,10 +1,10 @@
 import math
 import numpy as np
 import sys
-from numba import jit
+# from numba import jit
 
 
-@jit
+# @jit
 def gaussKernel(sig, m=-1):
 	w = np.zeros([m, m], dtype=float)
 	min_m = math.ceil(3 * sig) * 2 + 1
